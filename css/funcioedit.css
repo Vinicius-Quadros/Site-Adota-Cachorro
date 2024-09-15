@@ -1,0 +1,43 @@
+label{
+    background-color: #007BFF;
+    padding: 2%;
+    border-radius: 20px 60px 20px 60px;
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+    border-radius: 20px;
+    padding:  1%;
+    border: solid 3px;
+}
+.form{
+    margin-left: 40%;
+}
+.verde:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: green;
+}
+.vermelho:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: red;
+}
+.laranja:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: orange;
+}
+.amarelo:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: yellow;
+}
+.amarelo{
+    width: 44%;
+    margin-left: -5%;
+    
+}
+.botao{
+    margin-left: -5%;
+}

@@ -1,0 +1,113 @@
+body{
+    background-image: url(../imagens/filhote.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+footer{
+    clear: both;
+    margin-top: 2%;
+    background-color: #007BFF;
+    color: white;
+    padding: 3%;
+    font-size: 15px;
+}
+.logo{
+    float: right;
+    margin-right: 45%;
+    margin-top: -3.7%;
+}
+.rede{
+    float: right;
+    margin-left: 35%;
+    margin-top: -6.5%;
+}
+.form{
+    margin-left: 45%;
+}
+.Cad{
+    background-color: #007BFF;
+    margin-left: 40%;
+    width: 270px;
+    padding: 1%;
+    margin-top: 4%;
+    border-radius: 40px 140px 40px 140px;
+    font-size: 60px;
+}
+input[type=radio] {
+    width: 3%;
+    height: 15px;
+    background-color: red;
+}
+
+label{
+    background-color: #007BFF;
+    padding: 2%;
+    border-radius: 40px 120px 40px 120px;
+    font-size: 30px;
+}
+input{
+    font-size: 30px;
+    border-radius: 20px;
+    padding:  1%;
+    border: solid 3px;
+}
+input:invalid{
+    border-color: red;
+}
+input:valid{
+    border-color: green;
+}
+input:focus{
+    border-color: rgb(21, 4, 98) !important ;
+}
+span{
+    position: relative;
+}
+input:invalid + span::before{
+    content: '✖';
+    color: red;
+}
+input:valid + span::before{
+    content: '✓';
+    color: green;
+}
+input + span::before{
+    position: absolute;
+    right: 12px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.infor{
+    margin-top: 3%;
+    margin-right: 22%;
+}
+.sexo{
+    font-size: 30px;
+    background-color: rgb(255, 0, 76);
+    width: 450px;
+    padding: 1%;
+    border-radius: 10px 40px 10px 40px;
+}
+.cadastrar{
+    margin-left: 20%;
+    margin-top: 3%;
+    background-color: #007BFF;
+    padding: 2%;
+    border-radius: 40px;
+    border-style: hidden;
+    font-size: 30px;
+    color: white;
+}
+.cadastrar:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: green;
+}
+.procurar:hover{
+    background-color: rgb(255, 230, 0);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

@@ -1,0 +1,42 @@
+.cachorro{
+    background-image: url(../imagens/Carrossel4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.caixa{
+    background-color: rgb(190, 190, 190);
+    margin-top: 10%;
+    margin-left: 15%;
+    padding: 2%;
+    margin-right: 15%;
+    height: 1200px;
+    border-radius: 20px;
+}
+.texto{
+    float: right;
+    margin-left: 40%;
+    margin-top: -32%;
+}
+.nome{
+    font-size: 60px;
+    margin-left: 4%;
+}
+.info{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 8%;
+}
+.detalhes{
+    font-size: 20px;
+    margin-left: 8%;
+}
+.mapa{
+    font-size: 50px;
+    border-radius: 20px;
+}
+iframe{
+    margin-top: 1%;
+    
+}
+

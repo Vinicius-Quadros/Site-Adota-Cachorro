@@ -1,0 +1,46 @@
+footer{
+    clear: both;
+    background-color: #007BFF;
+    color: white;
+    padding: 3%;
+    font-size: 15px;
+    margin-top: 10%;
+}
+.logo{
+    float: right;
+    margin-top: -6.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../imagens/cachorrofeliz.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    margin-top: 3%;
+    background-color: #007BFF;
+    color: aliceblue;
+    border-radius: 40px 140px 40px 140px;
+    font-size: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.botao{
+    margin-left: 43%;
+    margin-top: 4%;
+}
+.acesso{
+    font-size: 45px;
+    background-color: #007BFF;
+    padding: 1%;
+    color: aliceblue;
+    border-radius: 40px;
+    margin-top: 4%;
+
+
+}

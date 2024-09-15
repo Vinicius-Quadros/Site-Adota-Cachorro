@@ -1,0 +1,79 @@
+body{
+    background-image: url(../imagens/CachorroDeFundo-ConversImagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.texto{
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    font-size: larger;
+    color: #007BFF;
+    background-color: rgb(190, 190, 190);
+    padding: 1%;
+    border-radius: 15px 50px 15px 50px;
+  
+}
+.Logo{
+    margin-top: 3%;
+    margin-left: 35%;
+
+}
+.galery {
+    width: 850px;
+    height: 550px;
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+}
+.galery .fotos img {
+    width: 19.9%;
+    height: 600px;
+}
+
+
+@keyframes animacao {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+}
+.main { 
+    display: flex; 
+    align-items: center;
+     justify-content: center;
+     margin-top: 5%;
+ }
+ footer{
+   clear: both;
+    background-color: #007BFF;
+    color: white;
+    padding: 3%;
+    font-size: 15px;
+    margin-top: 2%;
+}
+.logo{
+    float: right;
+    margin-right: 45%;
+    margin-top: -3.7%;
+}
+.rede{
+    float: right;
+    margin-left: 35%;
+    margin-top: -6.5%;
+}

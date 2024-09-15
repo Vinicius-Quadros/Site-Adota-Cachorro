@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/dog'v.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <script src="js/contato.js"></script>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">DOG'S V </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="sobre.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="FuncioLogin.php">Funcionários</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cadastrar.html">Cadastrar-se</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+      <div class="estrutura">
+        <p class="frase"> 
+            Mande Sua Dúvida Aqui
+        </p>
+
+        <div class="info">
+          <form  method="POST" action="php/salva_mensagem.php" onsubmit="return Mensagem();" name="form">
+            <label>Nome:</label> <br>
+            <input type="text" name="nome" placeholder="Digite seu Nome aqui!" size="50" class="nome" required onkeypress="return lettersOnly(event);"> <span></span> <br> <br>
+            <label>Gmail:</label> <br>
+            <input type="email" name="email" placeholder="Digite seu email aqui!" size="50" class="email" required> <span></span> <br> <br>
+            <label>Assunto:</label> <br>
+            <input type="text" name="assunto" placeholder="Título" size="25" class="assunto" required> <span></span> <br> <br>
+            <label>Mensagem:</label> <br>
+            <textarea name="mensagem" cols="52" rows="10" placeholder="Coloque sua mensagem aqui!" class="menssagem" required></textarea> <span style="right: 45px; top: -390px;"></span> <br> <br>
+            <input type="submit" class="envia" value="Enviar Mensagem" style="background: green;">  
+          </form>
+        </div>
+      </div>
+
+    <div class="redes">
+      <p class="p"><img src="imagens/instagram.png" width="100px">@Dogsv.oficial</p> <br> <br>
+      <p class="p"><img src="imagens/facebook.png" width="100px">Dog's_v.oficial </p> <br> <br>
+      <p class="p"><img src="imagens/YouTube.png" width="100px">DogsV.oficial </p>
+    </div>
+
+
+    
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48474.11431160356!2d-49.23837439281172!3d-25.442940257900165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3962c561d9b%3A0x4666e542885095!2sPetz!5e0!3m2!1spt-PT!2sbr!4v1651004985870!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+    <footer style="margin-top: 5%;">
+      <div class="direitos">
+        <img src="imagens/pata-de-cachorro.png" width="66px"><b style="margin-left: 1%;"> &reg; Todos os direitos reservados a página </b><img src="imagens/pata-de-cachorro.png" width="66px" style="margin-left: 1%;">
+      </div>
+
+      <div class="logo">
+        <img src="imagens/DOG'S V.png" width="170px" style="border-radius: 100mm; margin-top: -50px;">
+      </div>
+      <div class="rede">
+        <img src="imagens/instagram.png" width="66px">
+        <img src="imagens/whatsapp.png" width="66px">
+        <img src="imagens/facebook.png" width="66px">
+        <img src="imagens/Twitter.png" width="66px">
+      </div>
+  </footer>
+
+</body>
+</html>

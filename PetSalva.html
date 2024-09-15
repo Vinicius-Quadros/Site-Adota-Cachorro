@@ -1,0 +1,82 @@
+<?php
+session_start(); //Iniciar a sessão
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/dog'v.ico" type="image/x-icon">
+    <title>Adotantes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/telaprinfun.css">
+    <link rel="stylesheet" href="css/petedit.css">
+    <script src="js/contato.js"></script>
+    
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">DOG'S V </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="telaprinfun.html">Voltar</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="FuncioLogin.php">Sair</a>
+              </li>
+          </ul>
+        </div>
+    </nav> 
+
+    <h1>BANCO DE DADOS PETS</h1>
+    <br>
+
+    <form method='POST' action='php/salva_pet.php' class='estrutura'>
+      <label> Cachorrro</label> <br>
+      <input type='text' size='33' name='nome' required> <br> <br>
+      <label> Idade </label> <br>
+      <input type='text' size='33' name='idade' required> <br> <br>
+      <label> Raça</label> <br>
+      <input type='text' size='33' name='raca' required> <br> <br>
+      <label>Porte do Cachorro</label> <br>
+      <input type='text' size='33' name='porte' required> <br> <br>
+      <label>Peso</label> <br>
+      <input type='text' size='33' name='peso' required>  <br>  <br>
+      <label>Local</label> <br>
+      <input type='text' size='33' name='local' required>  <br>  <br>
+      <label>Sobre</label> <br>
+      <input type='text' size='33' name='sobre'>  <br>  <br>
+
+    <input type='submit' value='Salvar' name='editPet' style='margin-left:2%;'>
+    <a href='tabelaPet.php'><input type='button' value='Voltar' style='margin-left:20%;'></a><br><br>
+    </form>
+
+
+<footer>
+        <div class="direitos">
+          <img src="imagens/pata-de-cachorro.png" width="66px"><b style="margin-left: 1%;"> &reg; Todos os direitos reservados a página </b><img src="imagens/pata-de-cachorro.png" width="66px" style="margin-left: 1%;">
+        </div>
+
+        <div class="logo">
+          <img src="imagens/DOG'S V.png" width="170px" style="border-radius: 100mm;">
+        </div>
+       
+    </footer>
+
+
+</body>
+</html>

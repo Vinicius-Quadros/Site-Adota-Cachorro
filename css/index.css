@@ -1,0 +1,153 @@
+body{
+    background-image: url(../imagens/cãoslide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-attachment: fixed;
+    
+}
+
+.Logo{
+    display: 35%;
+}
+
+
+.titulo{
+    font-size: 250%;
+    float: left;
+    margin-top: -0.5%;
+    margin-left: 20%;
+}
+.fotoprincipal{
+    margin-left: 35%;
+    margin-top: 2%;
+    border-radius: 60px 240px 60px 240px;
+}
+
+
+.card{
+    float: right;
+    margin-right: 7%;
+    border-radius: 10px;
+    flex-basis: auto;
+    align-self: auto;
+
+}
+.card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.linha1{
+    align-self: auto;
+    flex-basis: auto;
+    margin-top: 10%;
+    margin-left: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-grow: 1;
+}
+.linha2{
+    align-self: auto;
+    flex-basis: auto;
+    margin-top: 8%;
+    margin-left: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-grow: 1;
+}
+.linha3{
+    align-self: auto;
+    flex-basis: auto;
+    margin-left: 6%;
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-grow: 1;
+}
+footer{
+    clear: both;
+    background-color: #007BFF;
+    color: white;
+    padding: 3%;
+    font-size: 15px;
+    margin-top: 10%;
+}
+.pagprincipal{
+    background-color: aqua;
+}
+.btn{
+    color: white;
+    background-color: #007BFF;
+    border-radius: 60px 190px 60px 190px;
+}
+.btn:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: orange;
+    color: white;
+}
+
+.logo{
+    float: right;
+    margin-right: 45%;
+    margin-top: -3.7%;
+}
+.rede{
+    float: right;
+    margin-left: 80%;
+    margin-top: -6.5%;
+}
+.carac{
+    list-style: none;
+    font-size: 35px;
+    height: 85px;
+}
+.tit{
+    list-style: none;
+    font-size: 22px;
+    opacity: 0.6;
+}
+.info1{
+    list-style: none;
+    font-size: 20px;
+}
+.info2{
+    list-style: none;
+    font-size: 20px;
+    margin-left: 21px;
+}
+.info3{
+    list-style: none;
+    font-size: 20px;
+}
+.info4{
+    list-style: none;
+    font-size: 20px;
+}
+.info5{
+    list-style: none;
+    font-size: 20px;
+}
+.info6{
+    list-style: none;
+    font-size: 20px;
+}
+.idade{
+    float: right;
+    margin-top: -13%;
+    margin-right: 35%;
+}
+iframe{
+    border-radius: 20px;
+}
+.modal-title{
+    font-size: 35px;
+}

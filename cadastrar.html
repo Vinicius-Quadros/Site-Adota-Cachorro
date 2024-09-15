@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="imagens/dog'v.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+ 
+    <script src="js/cadastro.js"></script>
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="js/cep.js"></script>
+    <script src="php/cepValida.php"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">DOG'S V </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="sobre.html">Sobre Nós</a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="FuncioLogin.php">Funcionários</a>
+            </li>
+          </ul>
+        </div>
+    </nav> 
+    
+
+
+    <h2 class="Cad"> Cadastro</h2>
+
+    
+
+    <div class="infor">
+      <form  onsubmit="return validar();" action="php/salva_cadastro.php" name="form" class="form" method="POST">
+        <label>CPF:</label> <br>  <br>
+        <input type="text" name="cpf" id="cpf" size="30" placeholder="000.000.000-00" required>
+        <span></span><br><br> <br>
+        <label>Seu nome:</label> <br> <br>
+        <input type="text" name="nome" size="30" onkeypress="return lettersOnly(event);" placeholder="Nome e Sobrenome" required> 
+        <span></span> <br> <br> <br>
+        <label>Seu Telefone:</label> <br> <br>
+        <input type="text" name="telefone" id="telefone" size="30"  placeholder="(DD) 00000-0000" onkeypress="tele(this)" required>
+        <span></span> <br> <br> <br>
+        <label>Seu E-mail:</label> <br> <br>
+        <input type="text" name="email" id="email" size="30"  placeholder="exemplo@gmail.com" required> 
+        <span></span><br> <br> <br>
+        <label>Nascimento:</label> <br> <br>
+        <input type="date" name="nasc" required> 
+        <br><br> <br>
+        <label>Sexo: </label> <br> <br>
+        <div class="sexo">
+          <input type="radio" name="sexo"  value="Masculino" required>  Masculino       
+          <input type="radio" name="sexo"  value="Feminino" style="margin-left:1%;" required> Feminino 
+          <input type="radio" name="sexo"  value="Outro" style="margin-left:1%;" required> Outro
+        </div>
+        <br> <br> <br>
+        <label> CEP:</label> <br> <br>
+        <input type="text" name="cep" id="cep" size="20" placeholder="00000-000" required> <span></span>
+         <br> <br> <br>
+        <label>Endereço:</label> <br> <br>
+        <input type="text" id="endereco" name="endereco" size="30" placeholder="Nome da Rua" onkeypress="return lettersOnly(event);" required> <span></span>
+        <input type="text"  name="num" placeholder="Número" size="6" style="margin-left: 2%;" onkeypress="return onlynumber();" maxlength="4" required> <span style="margin-left: 6px;"></span> <br> <br>
+        <input type="text" id="complemento" name="complemento" size="30"  onkeypress="return lettersOnly(event);" placeholder="Complemento"><br> <br>
+        <input type="text" id="bairro" name="bairro" size="30"  onkeypress="return lettersOnly(event);" placeholder="Bairro" required> <span></span> <br> <br>
+        <input type="text" id="cidade" name="ciadade" size="30"  onkeypress="return lettersOnly(event);" placeholder="Cidade" required> <span></span> <br> <br>
+        <input type="text" id="estado" name="estado" size="30"  onkeypress="return lettersOnly(event);" placeholder="Estado (Sigla)" required> <span></span>
+        <br> <br>
+        <input name="Submit" class="cadastrar" type="submit" value="Cadastrar" >
+
+      
+      </form>
+    </div>
+ 
+    <script>
+      $(function(){
+        $("#cpf").inputmask({
+          mask: "999.999.999-99"
+         });
+
+        $("#telefone").inputmask({
+          mask: "(99) 99999-9999"
+        });
+
+        $("#cep").inputmask({
+          mask: "99999-999"
+        })
+      });
+      
+
+      
+
+    </script>
+
+
+
+
+
+    <footer>
+        <div class="direitos">
+          <img src="imagens/pata-de-cachorro.png" width="66px"><b style="margin-left: 1%;"> &reg; Todos os direitos reservados a página </b><img src="imagens/pata-de-cachorro.png" width="66px" style="margin-left: 1%;">
+        </div>
+
+        <div class="logo">
+          <img src="imagens/DOG'S V.png" width="170px" style="border-radius: 100mm; margin-top: -50px;">
+        </div>
+        <div class="rede">
+          <img src="imagens/instagram.png" width="66px">
+          <img src="imagens/whatsapp.png" width="66px">
+          <img src="imagens/facebook.png" width="66px">
+          <img src="imagens/Twitter.png" width="66px">
+        </div>
+    </footer>
+</body>
+</html>

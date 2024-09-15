@@ -1,0 +1,49 @@
+input{
+    border-radius: 20px;
+    padding: 0.2%;
+    font-size: 130%;
+}
+label{
+    background-color: #007BFF;
+    padding: 2%;
+    border-radius: 40px 120px 40px 120px;
+    font-size: 30px;
+}
+input{
+    font-size: 30px;
+    border-radius: 20px;
+    padding:  1%;
+    border: solid 3px;
+}
+.estrutura{
+    margin-left: 35%;
+    margin-top: 3%;
+}
+.verde:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: green;
+}
+.vermelho:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: red;
+}
+.laranja:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: orange;
+}
+.amarelo:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: yellow;
+}
+.amarelo{
+    width: 50%;
+    margin-left: -3%;
+    
+}
+.botao{
+    margin-left: -3%;
+}

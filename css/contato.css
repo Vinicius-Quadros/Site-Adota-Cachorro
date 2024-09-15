@@ -1,0 +1,79 @@
+body{
+    background-image: url(../imagens/Buldog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.estrutura{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+label{
+    font-size: 30px;
+}
+.envia{
+    margin-left: 15%;
+}
+.menssagem{
+    padding: 2%;
+    border-radius: 20px;
+    
+}
+.nome, .email, .assunto, .envia{
+    padding: 1%;
+    border-radius: 15px;
+}
+.frase{
+    font-size: 40px;
+    margin-left: 8%;
+}
+input, textarea{
+    font-size: 25px;
+    border: solid 3px;
+}
+.redes{
+    margin-top: 6%;
+    margin-left: 25%;
+}
+.mapa{
+    float: right;
+    margin-top: -25%;
+    margin-right: 20%;
+    border-radius: 20px;
+}
+.p{
+ font-size: 25px;
+ color: #007BFF;
+ background-color: white;
+ width: 20%;
+ padding: 0.5%;
+ border-radius: 60px 190px 60px 190px;
+}
+
+input:invalid, textarea:invalid{
+    border-color: red;
+}
+input:valid, textarea:valid{
+    border-color: green;
+}
+input:focus, textarea:focus{
+    border-color: rgb(21, 4, 98) !important ;
+}
+span{
+    position: relative;
+}
+input:invalid + span::before, textarea:invalid + span::before{
+    content: '✖';
+    color: red;
+}
+input:valid + span::before, textarea:valid + span::before{
+    content: '✓';
+    color: green;
+}
+input + span::before{
+    position: absolute;
+    right: 12px;
+    margin-top: 20px;
+    font-size: 20px;
+}
